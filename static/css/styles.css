@@ -1,0 +1,461 @@
+/* Importing the font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    padding: 1.6rem;
+    color:rgb(205, 224, 255);
+    background-color: rgb(15 23 42);
+    max-width: 720px;
+    margin-top: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    margin-top: 24px;
+}
+
+nav {
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #64ffda;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 10px 0 0 0;
+    padding-left: 0;
+}
+
+.nav-links a {
+    color: #ccd6f6;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color:rgb(0, 191, 255);
+}
+
+/* Hero Section Styles */
+.hero {
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.hero-b {
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.hero-b p {
+    margin: 2rem 0 2em 0;
+    line-height: 1.9;
+    word-wrap: break-word;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero p {
+    margin: 2rem 0 2em 0;
+    line-height: 1.9;
+    word-wrap: break-word;
+}
+
+.hero-image img {
+    max-width: 220px;
+    border-radius: 15px;
+}
+
+.image-section {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-direction: row;
+}
+
+.image-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Media query for when the window is 725px or less */
+@media (max-width: 725px) {
+    .image-section {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+}
+
+/* Media query for when the window is more than 725px */
+@media (min-width: 725px) {
+    .image-div {
+        max-width: 100%;
+    }
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+
+
+.link-div {
+    border-radius: 10px;
+    height: 80px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    max-width: 500px; /* Maximum width is 500px */
+    transition: background-color 0.3s ease-out;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-position: -100% 0;
+}
+
+.icons i{
+    font-size: 4rem;
+}
+
+.icon-b {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-position: -100% 0;
+    position: fixed;
+    left:50px;
+    top:740px;
+}
+.icon-b i{
+    font-size: 1.8rem;
+}
+
+.icons i:hover {
+    background: linear-gradient(-30deg, rgb(0, 191, 255),rgb(0, 191, 255),white,rgb(0, 191, 255),white, rgb(255, 166, 0), rgb(0, 255, 213),rgb(0, 255, 213)) ;
+    background-size: 1000% 400%;
+    background-position: 100% 100%;
+    transition: background-position .8s ease-out, color 0s;
+    color: transparent; /* Hide the icon's default color */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* Standard property to clip background to text */
+}
+
+.icons-list-side i:hover {
+    background: linear-gradient(-30deg, rgb(0, 191, 255), rgb(255, 166, 0), rgb(0, 255, 213), white);
+    background-size: 1000% 200%;
+    background-position: 100% 0;
+    transition: background-position 0.3s ease-out, color 0s;
+    color: transparent; /* Hide the icon's default color */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* Standard property to clip background to text */
+}
+
+.icons path:hover {
+    fill: linear-gradient(-30deg, rgb(0, 191, 255),rgb(255, 255, 255), rgb(0, 255, 213));
+    background-size: 1000% 200%;
+    background-position: 100% 0;
+    transition: background-position 0.3s ease-out, color 0s;
+    color: transparent; /* Hide the icon's default color */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* Standard property to clip background to text */
+}
+
+.icons-list-side  path:hover {
+    fill: linear-gradient(-30deg, rgb(0, 191, 255),rgb(255, 255, 255), rgb(0, 255, 213));
+    background-size: 1000% 200%;
+    background-position: 100% 0;
+    transition: background-position 0.3s ease-out, color 0s;
+    color: transparent; /* Hide the icon's default color */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* Standard property to clip background to text */
+}
+
+.svgIcon{
+    transition: fill 0.3s ease; /* Smooth transition for fill property */
+}
+
+.svgPath {
+    transition: fill 0.3s ease; /* Smooth transition for gradient */
+}
+
+.icons-list:hover .svgPath {
+    fill: url(#grad2); /* Gradient on hover */
+}
+
+.icons-list-side:hover .svgPath {
+    fill: url(#grad2); /* Gradient on hover */
+}
+
+/* .icons path:hover{
+    fill:rgb(0, 191, 255);
+} */
+
+
+.icons-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons-list-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+}
+
+
+
+
+
+
+.show {
+    opacity: 0.5;
+    transition: opacity .3s ease-in-out;
+
+}
+
+.link-div:hover {
+    background-color: rgb(32, 44, 62);
+    color:rgb(205, 224, 255);
+    #resume-title{
+        color:rgb(0, 191, 255);
+    }
+}
+
+
+
+/* Media query for when the window is 672px or less */
+@media (max-width: 672px) {
+    .link-div {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .side{
+        display: none;
+    }
+}
+
+/* Media query for when the window is more than 673px */
+@media (min-width: 673px) {
+    .link-div {
+        max-width: 48.8%;
+    }
+}
+
+.long {
+    max-width: 800px;
+}
+
+.sides {
+    max-width: 100%;
+    min-width: 24rem;
+    display: block; /* Keep it in the layout but invisible */
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.showing {
+    opacity: 1;
+}
+
+
+
+.link-div p {
+    margin: 0;
+    line-height: 1.5; /* Improves readability */
+    word-wrap: break-word;
+}
+
+.resume {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+}
+
+
+.side{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: auto;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.side-a {
+    position: fixed;
+    left:17px;
+    top:0px;
+}
+
+.pos-b {
+    position: fixed;
+    left:17px;
+    top:500px;
+}
+
+
+
+.resume-title {
+    font-size: 0.9rem;
+}
+
+.resume-body {
+    font-size: 0.8rem;
+}
+
+.first-p {
+    min-width: 10rem;
+    font-size: 0.9rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0a192f;
+    color: #ccd6f6;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    font-size: 0.8em;
+}
+
+/* Grid and Spacing Styles */
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.relative img {
+    border-radius: 15px;
+    max-width: 220px;
+}
+
+.h-40 {
+    height: 10rem;
+}
+
+/* Responsive Design for Grid and Spacing (min-width: 640px) */
+@media (min-width: 640px) {
+    .sm\:row-span-2 {
+        grid-row: span 2 / span 2;
+
+    }
+
+    .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sm\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .sm\:grid-rows-3 {
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+    }
+
+    .sm\:flex-row {
+        flex-direction: row;
+    }
+
+    .sm\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(1rem * var(--tw-space-x-reverse));
+        margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+    }
+
+    .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(0px * var(--tw-space-y-reverse));
+    }
+
+    .sm\:object-center {
+        object-position: center;
+    }
+
+    .sm\:px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .sm\:py-24 {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+
+.moving-div {
+    font-size: 2.2rem;
+    left:1080px;
+ }
+.moving-div i:hover{
+    color:rgb(0, 191, 255);
+}
+
+#res-1{
+    margin-top: 50px;
+}
+
